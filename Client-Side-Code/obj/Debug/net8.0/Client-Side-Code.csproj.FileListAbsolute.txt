@@ -1,0 +1,15 @@
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\bin\Debug\net8.0\Client-Side-Code.exe
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\bin\Debug\net8.0\Client-Side-Code.deps.json
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\bin\Debug\net8.0\Client-Side-Code.runtimeconfig.json
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\bin\Debug\net8.0\Client-Side-Code.dll
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\bin\Debug\net8.0\Client-Side-Code.pdb
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\obj\Debug\net8.0\Client-Side-Code.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\obj\Debug\net8.0\Client-Side-Code.AssemblyInfoInputs.cache
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\obj\Debug\net8.0\Client-Side-Code.AssemblyInfo.cs
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\obj\Debug\net8.0\Client-Side-Code.csproj.CoreCompileInputs.cache
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\obj\Debug\net8.0\Client-Side-Code.sourcelink.json
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\obj\Debug\net8.0\Client-Side-Code.dll
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\obj\Debug\net8.0\refint\Client-Side-Code.dll
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\obj\Debug\net8.0\Client-Side-Code.pdb
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\obj\Debug\net8.0\Client-Side-Code.genruntimeconfig.cache
+C:\Users\Fares\Learning-REST-API\Student-API-Project\Client-Side-Code\obj\Debug\net8.0\ref\Client-Side-Code.dll
