@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Fares\\Learning-REST-API\\Student-API-Project\\StudentProjectAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CDE2D256-91DA-4F31-AEF7-95D62FA0D03C}|StudentProjectAPI.csproj|c:\\users\\fares\\learning-rest-api\\student-api-project\\studentprojectapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CDE2D256-91DA-4F31-AEF7-95D62FA0D03C}|StudentProjectAPI.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{CDE2D256-91DA-4F31-AEF7-95D62FA0D03C}|StudentProjectAPI.csproj|c:\\users\\fares\\learning-rest-api\\student-api-project\\studentprojectapi\\model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CDE2D256-91DA-4F31-AEF7-95D62FA0D03C}|StudentProjectAPI.csproj|solutionrelative:model\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CDE2D256-91DA-4F31-AEF7-95D62FA0D03C}|StudentProjectAPI.csproj|c:\\users\\fares\\learning-rest-api\\student-api-project\\studentprojectapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CDE2D256-91DA-4F31-AEF7-95D62FA0D03C}|StudentProjectAPI.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CDE2D256-91DA-4F31-AEF7-95D62FA0D03C}|StudentProjectAPI.csproj|c:\\users\\fares\\learning-rest-api\\student-api-project\\studentprojectapi\\datasemulation\\studentdatasemulation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,11 +22,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Student.cs",
               "DocumentMoniker": "C:\\Users\\Fares\\Learning-REST-API\\Student-API-Project\\StudentProjectAPI\\Model\\Student.cs",
               "RelativeDocumentMoniker": "Model\\Student.cs",
@@ -34,17 +34,18 @@
               "RelativeToolTip": "Model\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T11:19:20.332Z"
+              "WhenOpened": "2025-07-28T11:19:20.332Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StudentController.cs",
               "DocumentMoniker": "C:\\Users\\Fares\\Learning-REST-API\\Student-API-Project\\StudentProjectAPI\\Controllers\\StudentController.cs",
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
               "ToolTip": "C:\\Users\\Fares\\Learning-REST-API\\Student-API-Project\\StudentProjectAPI\\Controllers\\StudentController.cs",
               "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-27T16:46:55.675Z",
               "EditorCaption": ""
@@ -57,9 +58,10 @@
               "RelativeDocumentMoniker": "DataSemulation\\StudentDataSemulation.cs",
               "ToolTip": "C:\\Users\\Fares\\Learning-REST-API\\Student-API-Project\\StudentProjectAPI\\DataSemulation\\StudentDataSemulation.cs",
               "RelativeToolTip": "DataSemulation\\StudentDataSemulation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABDAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T16:41:31.086Z"
+              "WhenOpened": "2025-07-27T16:41:31.086Z",
+              "EditorCaption": ""
             }
           ]
         }

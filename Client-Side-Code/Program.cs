@@ -16,6 +16,7 @@ namespace Client_Side_Code
             httpClient.BaseAddress = new Uri("http://localhost:5151/api/Student");
 
             await GetAllStudents();
+            await GetPassedStudents();
 
         }
 
@@ -25,7 +26,7 @@ namespace Client_Side_Code
             {
                 Console.WriteLine("\n__________________________\n");
                 Console.WriteLine("\nFetching all students....\n");
-                var students = await httpClient.GetFromJsonAsync<List<Student>>("Student");
+                var students = await httpClient.GetFromJsonAsync<List<Student>>("Student/GetAllStudents");
                 if (students != null)
                 {
                     foreach (var student in students)
@@ -40,6 +41,29 @@ namespace Client_Side_Code
                 Console.WriteLine($"Error: {ex.Message}");
             }
         }
+
+        static async Task GetPassedStudents()
+        {
+            try
+            {
+                Console.WriteLine("\n__________________________\n");
+                Console.WriteLine("\nFetching Passed students....\n");
+                var students = await httpClient.GetFromJsonAsync<List<Student>>("Student/GetPassedStudents");
+                if (students != null)
+                {
+                    foreach (var student in students)
+                    {
+                        Console.WriteLine($"ID: {student.Id}, Name: {student.Name}, Age: {student.Age}, Grade: {student.Grade}");
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+        }
+
     }
 
 

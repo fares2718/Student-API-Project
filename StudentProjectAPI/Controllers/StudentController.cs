@@ -10,11 +10,19 @@ namespace StudentProjectAPI.Controllers
     public class StudentController : ControllerBase
     {
 
-        [HttpGet]
+        [HttpGet ("GetAllStudents",Name = "GetAllStudents")]
 
         public ActionResult<IEnumerable<Student>> GetAllStudents ()
         {
             return Ok(StudentDataSemulation.StudentsList);
+        }
+
+        [HttpGet ("GetPassedStudents",Name = "GetPassedStudents")]
+        
+        public ActionResult<IEnumerable<Student>> GetPassedStudents()
+        {
+            var passedStudents = StudentDataSemulation.StudentsList.Where(student => student.Grade >= 50).ToList();
+            return Ok(passedStudents);
         }
 
     }

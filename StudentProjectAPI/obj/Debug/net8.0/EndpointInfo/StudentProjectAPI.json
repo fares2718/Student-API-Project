@@ -5,11 +5,51 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Student": {
+    "/api/Student/GetAllStudents": {
       "get": {
         "tags": [
           "Student"
         ],
+        "operationId": "GetAllStudents",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Student"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Student"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Student"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Student/GetPassedStudents": {
+      "get": {
+        "tags": [
+          "Student"
+        ],
+        "operationId": "GetPassedStudents",
         "responses": {
           "200": {
             "description": "OK",
