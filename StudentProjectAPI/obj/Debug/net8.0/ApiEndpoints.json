@@ -40,5 +40,26 @@
       }
     ],
     "EndpointName": "GetPassedStudents"
+  },
+  {
+    "ContainingType": "StudentProjectAPI.Controllers.StudentController",
+    "Method": "GetStudentsGradesAvg",
+    "RelativePath": "api/Student/GetStudentsGradesAvg",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Double",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetStudentsGradesAvg"
   }
 ]

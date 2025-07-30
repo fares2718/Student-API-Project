@@ -35,9 +35,9 @@
               "RelativeDocumentMoniker": "..\\Client-Side-Code\\Program.cs",
               "ToolTip": "C:\\Users\\Fares\\Learning-REST-API\\Student-API-Project\\Client-Side-Code\\Program.cs",
               "RelativeToolTip": "..\\Client-Side-Code\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAmwGgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T07:00:35.934Z",
+              "WhenOpened": "2025-07-30T16:35:52.205Z",
               "EditorCaption": ""
             },
             {
@@ -50,7 +50,8 @@
               "RelativeToolTip": "Model\\Student.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T11:19:20.332Z"
+              "WhenOpened": "2025-07-28T11:19:20.332Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -60,9 +61,10 @@
               "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
               "ToolTip": "C:\\Users\\Fares\\Learning-REST-API\\Student-API-Project\\StudentProjectAPI\\Controllers\\StudentController.cs",
               "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAABcAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T16:46:55.675Z"
+              "WhenOpened": "2025-07-27T16:46:55.675Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

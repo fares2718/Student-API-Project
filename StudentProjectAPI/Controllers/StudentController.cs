@@ -25,5 +25,15 @@ namespace StudentProjectAPI.Controllers
             return Ok(passedStudents);
         }
 
+        [HttpGet("GetStudentsGradesAvg", Name = "GetStudentsGradesAvg")]
+
+        public ActionResult<double> GetStudentsGradesAvg()
+        {
+            if (StudentDataSemulation.StudentsList.Count == 0)
+                return NotFound("No Students Found");
+            var GradesAvg = StudentDataSemulation.StudentsList.Average(student => student.Grade);
+            return Ok(GradesAvg);
+        }
+
     }
 }

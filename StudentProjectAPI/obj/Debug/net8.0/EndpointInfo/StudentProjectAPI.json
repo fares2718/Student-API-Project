@@ -82,6 +82,39 @@
           }
         }
       }
+    },
+    "/api/Student/GetStudentsGradesAvg": {
+      "get": {
+        "tags": [
+          "Student"
+        ],
+        "operationId": "GetStudentsGradesAvg",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "number",
+                  "format": "double"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "number",
+                  "format": "double"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "number",
+                  "format": "double"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
