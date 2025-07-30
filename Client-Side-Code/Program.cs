@@ -15,8 +15,33 @@ namespace Client_Side_Code
         {
             httpClient.BaseAddress = new Uri("http://localhost:5151/api/Student");
 
-            await GetAllStudents();
-            await GetPassedStudents();
+            Console.WriteLine("\n__________________________\n");
+            Console.WriteLine("___________Welcome_________");
+            Console.WriteLine("[1] Show All Students");
+            Console.WriteLine("[2] Show Passed Students");
+            Console.WriteLine("[3] Show Students Grades Average");
+            Console.WriteLine("\n__________________________\n");
+            Console.WriteLine("\nEnter option number\n");
+            short opNumber;
+            if(short.TryParse(Console.ReadLine(),out opNumber))
+            {
+                if (opNumber == 1)
+                {
+                    await GetAllStudents();
+                }
+                else if (opNumber == 2)
+                {
+                    await GetPassedStudents();
+                }
+                else if (opNumber == 3)
+                {
+                    await GetStudentsGradesAvg();
+                }
+                else
+                {
+                    Console.WriteLine("Something went wrong!!");
+                }
+            }
 
         }
 
@@ -57,6 +82,21 @@ namespace Client_Side_Code
                     }
 
                 }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+        }
+
+        static async Task GetStudentsGradesAvg()
+        {
+            try
+            {
+                Console.WriteLine("\n__________________________\n");
+                Console.WriteLine("\nFetching students grades average....\n");
+                var gradesAverage = await httpClient.GetFromJsonAsync<double>("Student/GetStudentsGradesAvg");
+                Console.WriteLine($"Grades Avareage is : {gradesAverage}");
             }
             catch (Exception ex)
             {
