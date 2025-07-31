@@ -12,14 +12,14 @@ namespace StudentProjectAPI.Controllers
     {
 
         [HttpGet ("GetAllStudents",Name = "GetAllStudents")]
-
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<IEnumerable<Student>> GetAllStudents ()
         {
             return Ok(StudentDataSemulation.StudentsList);
         }
 
         [HttpGet ("GetPassedStudents",Name = "GetPassedStudents")]
-        
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<IEnumerable<Student>> GetPassedStudents()
         {
             var passedStudents = StudentDataSemulation.StudentsList.Where(student => student.Grade >= 50).ToList();
@@ -27,7 +27,8 @@ namespace StudentProjectAPI.Controllers
         }
 
         [HttpGet("GetStudentsGradesAvg", Name = "GetStudentsGradesAvg")]
-
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<double> GetStudentsGradesAvg()
         {
             if (StudentDataSemulation.StudentsList.Count == 0)
@@ -37,7 +38,9 @@ namespace StudentProjectAPI.Controllers
         }
 
         [HttpGet("{id}",Name = "GetStudentByID")]
-
+        [ProducesResponseType (StatusCodes.Status200OK)]
+        [ProducesResponseType (StatusCodes.Status400BadRequest)]
+        [ProducesResponseType (StatusCodes.Status404NotFound)]
         public ActionResult<Student> GetStudentByID(int id)
         {
             var student = StudentDataSemulation.StudentsList.FirstOrDefault(student => student.Id == id);
