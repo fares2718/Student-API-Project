@@ -20,6 +20,7 @@ namespace Client_Side_Code
             Console.WriteLine("[1] Show All Students");
             Console.WriteLine("[2] Show Passed Students");
             Console.WriteLine("[3] Show Students Grades Average");
+            Console.WriteLine("[4] Get Student By ID");
             Console.WriteLine("\n__________________________\n");
             Console.WriteLine("\nEnter option number\n");
             short opNumber;
@@ -36,6 +37,17 @@ namespace Client_Side_Code
                 else if (opNumber == 3)
                 {
                     await GetStudentsGradesAvg();
+                }
+                else if (opNumber ==4)
+                {
+                    Console.Clear();
+                    Console.WriteLine("\nEnter Student ID\n");
+                    if(int.TryParse(Console.ReadLine(),out int id))
+                    {
+                        await GetStudentByID(id);
+                    }
+                    else
+                        Console.WriteLine("Some Thing went Wrong");
                 }
                 else
                 {
@@ -96,13 +108,35 @@ namespace Client_Side_Code
                 Console.WriteLine("\n__________________________\n");
                 Console.WriteLine("\nFetching students grades average....\n");
                 var gradesAverage = await httpClient.GetFromJsonAsync<double>("Student/GetStudentsGradesAvg");
-                Console.WriteLine($"Grades Avareage is : {gradesAverage}");
+                if(gradesAverage!=null)
+                    Console.WriteLine($"Grades Avareage is : {gradesAverage}");
+                else
+                    Console.WriteLine("Error");
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error: {ex.Message}");
             }
         }
+
+        static async Task GetStudentByID(int id)
+        {
+            try
+            {
+                Console.WriteLine("\n__________________________\n");
+                Console.WriteLine("\nFetching student....\n");
+                var student = await httpClient.GetFromJsonAsync<Student>($"Student/{id}");
+                if(student!=null) 
+                    Console.WriteLine($"ID: {student.Id}, Name: {student.Name}, Age: {student.Age}, Grade: {student.Grade}");
+                else
+                    Console.WriteLine("Error");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+        }
+
 
     }
 
