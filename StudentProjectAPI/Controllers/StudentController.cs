@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using StudentProjectAPI.DataSemulation;
 using StudentProjectAPI.Model;
@@ -33,6 +34,22 @@ namespace StudentProjectAPI.Controllers
                 return NotFound("No Students Found");
             var GradesAvg = StudentDataSemulation.StudentsList.Average(student => student.Grade);
             return Ok(GradesAvg);
+        }
+
+        [HttpGet("{id}",Name = "GetStudentByID")]
+
+        public ActionResult<Student> GetStudentByID(int id)
+        {
+            var student = StudentDataSemulation.StudentsList.FirstOrDefault(student => student.Id == id);
+
+            if (id < 1)
+                return BadRequest($"{id} is Not Accepted");
+            
+            if (student == null)
+                return NotFound($"No Students With ID {id} Found");
+
+            return Ok(student);
+                
         }
 
     }
