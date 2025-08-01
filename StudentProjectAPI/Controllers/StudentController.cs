@@ -55,5 +55,20 @@ namespace StudentProjectAPI.Controllers
                 
         }
 
+
+        [HttpPost (Name ="AddStudent")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+
+        public ActionResult<Student> AddStudent(Student student)
+        {
+            if (student == null || string.IsNullOrEmpty(student.Name) || student.Age < 4 || student.Grade <0)
+                return BadRequest("Invalid student data");
+            student.Id = StudentDataSemulation.StudentsList.Count > 0 ? StudentDataSemulation.StudentsList.Max(s => s.Id + 1) : 1;
+            StudentDataSemulation.StudentsList.Add(student);
+            return CreatedAtRoute("AddStudent", new {id = student.Id},student);
+        }
+
+
     }
 }
