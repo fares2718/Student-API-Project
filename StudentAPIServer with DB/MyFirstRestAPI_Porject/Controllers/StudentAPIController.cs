@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc; 
+using StudentAPIBusinessLayer;
 //using StudentApi.Models;
 //using StudentApi.DataSimulation;
 using System.Collections.Generic;
-using StudentAPIBusinessLayer;
-using StudentDataAccessLayer;
+using DTOs;
 
 namespace StudentApi.Controllers 
 {

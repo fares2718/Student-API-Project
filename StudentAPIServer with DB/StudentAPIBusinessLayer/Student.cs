@@ -1,5 +1,6 @@
 ﻿using System.Data;
 using StudentDataAccessLayer;
+using DTOs;
 
 namespace StudentAPIBusinessLayer
 {
@@ -30,13 +31,13 @@ namespace StudentAPIBusinessLayer
             }
 
         private bool _AddNewStudent()
-            {
+        {
                 //call DataAccess Layer 
 
-                this.ID = StudentData.AddStudent(SDTO);
+            this.ID = StudentData.AddStudent(SDTO);
 
-                return (this.ID != -1);
-            }
+            return (this.ID != -1);
+        }
 
             private bool _UpdateStudent()
             {

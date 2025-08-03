@@ -1,29 +1,13 @@
 ﻿using System;
 using System.Data;
 using Microsoft.Data.SqlClient;
+using DTOs;
 
 namespace StudentDataAccessLayer
 {
-    public class StudentDTO
-    {
-        public StudentDTO(int id, string name, int age, int grade)
-        {
-            this.Id = id;
-            this.Name = name;
-            this.Age = age;
-            this.Grade = grade;
-        }
-
-
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-        public int Grade { get; set; }
-    }
-
     public class StudentData
     {
-        static string _connectionString = "Server=localhost;Database=StudentsDB;User Id=sa;Password=sa;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;";
+        static string _connectionString = "Server=DESKTOP-O1ENIR6;Database=StudentsDB;User Id=sa;Password=sa123456;Encrypt=False;TrustServerCertificate=True;Connection Timeout=30;";
 
         public static List<StudentDTO> GetAllStudents()
         {
